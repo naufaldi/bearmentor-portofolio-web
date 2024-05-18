@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 100%;
+        height: 400px;
+        border: 2px solid blue;
+        list-style-type: none;
+        padding: 0;
+        gap: 20px;
+      }
+      .flex-item {
+        width: 50px;
+        height: 50px;
+        border: 2px solid red;
+        background-color: aqua;
+      }
+      .container-navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        background: #c37f7f;
+        align-items: center;
+      }
+      .list-menu {
+        display: flex;
+      }
+      .logo {
+        margin-right: 32px;
+        width: 125px;
+        height: 32px;
+      }
+      .menu-navbar {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+
+      .logo-right {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      .logo-brand {
+        width: 135px;
+        height: 40px;
+      }
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        border: 2px solid red;
+      }
+      .grid-container h1 {
+        grid-row-start: 2;
+        grid-column-start: 1;
+        grid-column-end: 8;
+      }
+      .grid-container p {
+        grid-row-start: 3;
+        grid-column-start: 1;
+        grid-column-end: 8;
+      }
+      .list-button {
+        grid-row-start: 4;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        display: flex;
+        gap: 20px;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .mobile {
+        grid-column-start: 8;
+        grid-column-end: 13;
+        width: 320px;
+        height: 640px;
+        grid-row-start: 1;
+        grid-row-end: 6;
+      }
+      .hero {
+        display: flex;
+        justify-content: space-between;
+      }
+      .content {
+        width: 696px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .image {
+        display: flex;
+        width: 488px;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="flex-container">
+      <li class="flex-item">1</li>
+      <li class="flex-item">2</li>
+      <li class="flex-item">3</li>
+      <li class="flex-item">4</li>
+      <li class="flex-item">5</li>
+    </ul>
+    <div class="container-navbar">
+      <div class="list-menu">
+        <img src="https://placehold.co/600x400/png" class="logo" alt="Logo " />
+        <div class="menu-navbar">
+          <a href="">Feature</a>
+          <a href="">Pricing</a>
+          <a href="">Career</a>
+          <a href="">Help</a>
+        </div>
+      </div>
+      <div class="logo-right">
+        <img
+          src="https://placehold.co/135x40/png"
+          class="logo-brand"
+          alt="Logo"
+        />
+        <img
+          src="https://placehold.co/135x40/png"
+          class="logo-brand"
+          alt="Logo"
+        />
+      </div>
+    </div>
+    <div class="grid-container">
+      <h1>The easiest way to manage projects</h1>
+      <p>
+        From the small stuff to the big picture, organizes the work so teams
+        know what to do, why it matters, and how to get it done.
+      </p>
+      <div class="list-button">
+        <button>Get Started</button>
+        <button>Watch Video</button>
+      </div>
+      <img src="https://placehold.co/320x640/png" class="mobile" alt="Logo " />
+    </div>
+    <div class="hero">
+      <div class="content">
+        <h1>The easiest way to manage projects</h1>
+        <p>
+          From the small stuff to the big picture, organizes the work so teams
+          know what to do, why it matters, and how to get it done.
+        </p>
+        <div class="list-button">
+          <button>Get Started</button>
+          <button>Watch Video</button>
+        </div>
+      </div>
+      <div class="image">
+        <img
+          src="https://placehold.co/320x640/png"
+          class="mobile"
+          alt="Logo "
+        />
+      </div>
+    </div>
+  </body>
+</html>
