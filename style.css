@@ -1,0 +1,106 @@
+:root{
+ /* deklrasi */
+ /* variable = value 
+ --namaVariable : value;
+ */
+ --primary-color-900 :#ae9fc3; 
+ --primary-color-600 :#4c288b; 
+ --secondary-color-600 :#0b767f; 
+ --secondary-color-600 :#134a4d; 
+ --body-xl: 18px;
+ --body-lg: 16px;
+ --body-base: 14px;
+ --body-sm: 12px;
+}
+@font-face {
+ font-family: "Roumant";
+ src:
+   local("Roumant"),
+   url("/assets/fonts/RomauntGaolines.ttf") format("truetype") ,
+}
+
+/* General style */
+.btn{
+ background-color: var(--primary-color-600);
+ font-size: var(--body-sm);
+ font-family: "Roumant";
+}
+h1{
+ font-family: "Roumant";
+ font-size: 30px;
+}
+.accordion{
+ background-color: var(--primary-color-600);
+ font-size: var(--body-lg);
+}
+.content{
+ background-color: var(--primary-color-600);
+ font-size: var(--body-base);
+}
+
+.footer{
+ background-color: var(--primary-color-600);
+}.header{
+ background-color: var(--primary-color-600);
+}.body{
+ background-color: var(--primary-color-600);
+}
+
+/* normalnya */
+.grid{
+ display: grid;
+ display: -ms-grid;
+ display: -moz-grid;
+ display: -o-grid; 
+ -moz-filter: blur();
+ -webkit-filter: grayscale();
+}
+
+
+
+
+@media screen and (max-width: 2000px) {
+ .navbar{
+  height: 300px;
+  width: 300px;
+  background-color: var(--primary-color-600);
+ }
+}
+
+
+@media screen and (max-width: 1000px) {
+ .navbar{
+  height: 500px;
+  width: 500px;
+  background-color: var(--primary-color-600);
+ }
+}
+
+@media screen and (max-width: 500px) {
+ .navbar{
+  height: 100px;
+  width: 100px;
+  background-color: var(--primary-color-900);
+ }
+}
+
+@media screen and (min-width: 576px) {
+ h1 {
+  font-size: 40px;
+ }
+ 
+}
+
+@media screen and (min-width: 768px) {
+ h1 {
+  font-size: 20px;
+ }
+ 
+}
+
+@media screen and (min-width: 992px) {
+ h1 {
+  font-size: 50px;
+ }
+ 
+}
