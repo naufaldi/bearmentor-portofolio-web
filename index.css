@@ -121,3 +121,117 @@ h2{
 #title{
  font-size: 30px;
 }
+
+/*  contoh BEM */
+/*  Block */
+.btn {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ font-size: 14px;
+}
+
+.hero {
+
+}
+.navbar{
+
+}
+.accordion {
+
+}
+.breadcumb {
+
+}
+
+/* element base on block */
+.btn__send{
+ background-color: green;
+ border: 1px solid green;
+ font-weight: 500;
+}
+.btn__fail{
+ background-color: red;
+ border: 1px solid red;
+ font-weight: 700;
+}
+.btn__cancel{
+ background-color: orange;
+ border: 1px solid orange;
+}
+.hero__content{
+
+}
+.hero__title{
+
+}
+.hero__img{
+
+}
+.navbar__menu{
+
+}
+.navbar__submenu{
+
+}
+
+/* modifier */
+.btn--orange{
+ color: orange;
+}
+.btn--red{
+ color: red;
+}
+.btn--blue{}
+
+.hero--right{}
+.hero--left{}
+.hero--top{}
+
+.flex{
+ display: flex;
+}
+.flex-column{
+ flex-direction: column;
+}
+.m-0{
+ margin: 0;
+}
+.p-0{
+ padding: 0;
+}
+.px-10{
+ padding-right: 10px;
+ padding-left: 10px;
+}
+.py-10{
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+.block{
+ display: block;
+}
+
+/* penggabungan */
+.button-send{
+
+}
+.hero-left{
+
+}
+
+.product{
+ background-color: aqua;
+ font-size: 14px;
+ margin: 20px;
+ padding: 20px;
+}
+.grid-cols-12{
+ grid-template-columns: repeat(12,1fr);
+}
+/* Penamaan CSS 
+1. snake-case
+2. huruf bukan angka box1 => box-one / box-two / box-left, box-center, box-right
+4. absolute => padding,margin,width, height,fontize etc
+5. relative => width, height, fontsize
+*/

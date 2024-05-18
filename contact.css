@@ -1,0 +1,38 @@
+/* Dekstop */
+
+.menu{
+ display: flex;
+ gap: 6px;
+ flex-direction: column;
+ width: 100%;
+ 
+}
+
+.title{
+ font-size: 16px;
+}
+
+
+
+
+
+@media screen and (min-width: 768px) {
+ .menu{
+  gap: 4px;
+  justify-content: space-between;
+ }
+ .title{
+  font-size: 24px;
+ }
+}
+
+@media screen and (min-width: 1024px) {
+ .menu{
+  gap: 2px;
+  flex-direction: row;
+  justify-content: flex-start;
+ }
+ .title{
+  font-size: 30px;
+ }
+}
